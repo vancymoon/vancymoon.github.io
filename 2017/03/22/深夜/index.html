@@ -87,16 +87,16 @@
 
 
 
-<meta name="description" content="hello">
+<meta name="description" content="hello$$2+3$$">
 <meta property="og:type" content="article">
 <meta property="og:title" content="night">
 <meta property="og:url" content="http://yoursite.com/2017/03/22/深夜/index.html">
 <meta property="og:site_name" content="君大人">
-<meta property="og:description" content="hello">
-<meta property="og:updated_time" content="2017-03-22T15:42:42.000Z">
+<meta property="og:description" content="hello$$2+3$$">
+<meta property="og:updated_time" content="2017-03-22T17:14:17.000Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="night">
-<meta name="twitter:description" content="hello">
+<meta name="twitter:description" content="hello$$2+3$$">
 
 
 
@@ -355,7 +355,7 @@
       
 
       
-        <p>hello</p>
+        <p>hello<br>$$<br>2+3<br>$$</p>
 
       
     </div>
@@ -781,6 +781,28 @@
 
 
   
+  
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {
+          inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+          processEscapes: true,
+          skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+        }
+      });
+    </script>
+
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Queue(function() {
+        var all = MathJax.Hub.getAllJax(), i;
+        for (i=0; i < all.length; i += 1) {
+          all[i].SourceElement().parentNode.className += ' has-jax';
+        }
+      });
+    </script>
+    <script type="text/javascript" src="//cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  
+
 
   
 

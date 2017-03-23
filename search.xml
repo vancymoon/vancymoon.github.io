@@ -5,7 +5,7 @@
     <entry>
       <title><![CDATA[Hello]]></title>
       <url>%2F2017%2F03%2F23%2FHello%2F</url>
-      <content type="text"><![CDATA[Hello 1234.class &#123; color: red; width: 100%&#125; 1234.class &#123; color: red; width: 100%&#125;]]></content>
+      <content type="text"><![CDATA[Hello .class { color: red; width: 100% } .name { color: red; width: 100% } &lt;?xml version="1.0" encoding="utf-8"?> &lt;search> &lt;entry> &lt;title>&lt;![CDATA[Hello]]>&lt;/title> &lt;url>%2F2017%2F03%2F23%2FHello%2F&lt;/url> &lt;content type="text">&lt;![CDATA[Hello .class { color: red; width: 100% } .name { color: red; width: 100% }]]>&lt;/content> &lt;/entry> &lt;/search>]]></content>
     </entry>
 
     

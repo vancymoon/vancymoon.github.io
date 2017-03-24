@@ -10,7 +10,7 @@
     
     <title>
         
-            海街日记 | 
+            详解CSS float 属性 | 
         
         君大人的写字地
     </title>
@@ -27,7 +27,7 @@
     <meta name="theme-color" content="#0097A7">
     <meta name="author" content="君大人">
     <meta name="description" content="null">
-    <meta name="keywords" content="null,电影">
+    <meta name="keywords" content="null,CSS">
 
     <!--iOS -->
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
@@ -48,9 +48,9 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="海街日记 | 君大人的写字地">
+    <meta property="og:title" content="详解CSS float 属性 | 君大人的写字地">
     <meta property="og:description" content="null">
-    <meta property="og:article:tag" content="电影"> 
+    <meta property="og:article:tag" content="CSS"> 
 
     <!--[if lte IE 9]>
         <link rel="stylesheet" href="/css/ie-blocker.css">
@@ -234,7 +234,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#float属性给元素带来的变化"><span class="post-toc-number">1.</span> <span class="post-toc-text">float属性给元素带来的变化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-浮动元素会生成一个块级框，而不论它本身是何种元素。"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1. 浮动元素会生成一个块级框，而不论它本身是何种元素。</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-脱离文档流"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 脱离文档流</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。</span></a></li></ol></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -258,11 +258,19 @@
                 
     <!-- Paradox Post Header -->
     
-        <!-- Custom Thumbnail -->
-        <div class="post_thumbnail-custom mdl-card__media mdl-color-text--grey-50" style="background-image:url(/img/posts/umimachi.jpg)">
+        
+            <!-- Random Thumbnail -->
+            <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
+
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
+</script>
+
+        
     
             <p class="article-headline-p">
-                海街日记
+                详解CSS float 属性
             </p>
         </div>
 
@@ -281,7 +289,7 @@
     <!-- Author Name & Date -->
     <div>
         <strong>君大人</strong>
-        <span>3月 23, 2017</span>
+        <span>3月 24, 2017</span>
     </div>
 
     <div class="section-spacer"></div>
@@ -305,7 +313,7 @@
     </button>
     <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
         <li class="mdl-menu__item">
-        <a class="post_tag-link" href="/tags/电影/">电影</a>
+        <a class="post_tag-link" href="/tags/CSS/">CSS</a>
     </ul>
     
 
@@ -321,7 +329,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=海街日记&url=http://yoursite.com//2017/03/23/Hello/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=详解CSS float 属性&url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -330,7 +338,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=海街日记&url=http://yoursite.com//2017/03/23/Hello/index.html&via=君大人" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=详解CSS float 属性&url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html&via=君大人" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -339,7 +347,7 @@
 
     <!-- Share Facebook -->
     
-        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/03/23/Hello/index.html" target="_blank">
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Facebook
             </li>
@@ -348,7 +356,7 @@
 
     <!-- Share Google+ -->
     
-        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/03/23/Hello/index.html" target="_blank">
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Google+
             </li>
@@ -372,7 +380,65 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        
+        <h1 id="float属性给元素带来的变化"><a href="#float属性给元素带来的变化" class="headerlink" title="float属性给元素带来的变化"></a>float属性给元素带来的变化</h1><h2 id="1-浮动元素会生成一个块级框，而不论它本身是何种元素。"><a href="#1-浮动元素会生成一个块级框，而不论它本身是何种元素。" class="headerlink" title="1. 浮动元素会生成一个块级框，而不论它本身是何种元素。"></a>1. 浮动元素会生成一个块级框，而不论它本身是何种元素。</h2><h2 id="2-脱离文档流"><a href="#2-脱离文档流" class="headerlink" title="2. 脱离文档流"></a>2. 脱离文档流</h2><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector">div </span><span class="token punctuation">{</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> solid orangered <span class="token number">1</span>px<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">10</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.flt</span> </span><span class="token punctuation">{</span>
+            <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>Content 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flt<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Content 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p><img src="../img/posts/float1.png" alt="float example 1"><br>所谓文档流，就是我们指的盒子模型，可以看到 <code>Content 2</code>整个盒子都没有被包含进父级元素中，这就是说<code>Content 2</code>浮动后脱离了文档流。</p>
+<p>再举一个脱离文档流的例子：</p>
+<pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>Title<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>style</span><span class="token punctuation">></span></span><span class="token style language-css">
+        <span class="token selector">div </span><span class="token punctuation">{</span>
+            <span class="token property">border</span><span class="token punctuation">:</span> solid orangered <span class="token number">1</span>px<span class="token punctuation">;</span>
+            <span class="token property">margin</span><span class="token punctuation">:</span> <span class="token number">20</span>px <span class="token number">10</span>px <span class="token number">10</span>px<span class="token punctuation">;</span>
+            <span class="token property">line-height</span><span class="token punctuation">:</span> <span class="token number">20</span>px<span class="token punctuation">;</span>
+        <span class="token punctuation">}</span>
+        <span class="token selector"><span class="token class">.flt</span> </span><span class="token punctuation">{</span>
+            <span class="token property">float</span><span class="token punctuation">:</span> left<span class="token punctuation">;</span>
+            <span class="token comment" spellcheck="true">/*margin-left: 10px;*/</span>
+            <span class="token comment" spellcheck="true">/*margin-top: 0;*/</span>
+        <span class="token punctuation">}</span>
+    </span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>style</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>
+    Father
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>Content 1<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span> <span class="token attr-name">class</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>flt<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Content 2<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>div</span><span class="token punctuation">></span></span>Content 3<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>div</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
+</code></pre>
+<p><img src="../img/posts/float2.png" alt="float example 2"></p>
+<p>可以看到，<code>Content 3</code>无视了<code>Content 2</code>，直接布局在<code>Content 1</code>后面。</p>
+<p><em>但是</em>！可以看到虽然<code>Content 3</code>的盒子虽然无视了<code>Content 2</code>，但是<code>Content 3</code>的文字无法无视<code>Content 2</code>整个盒子，因此<code>Content 3</code>的文字布局在<code>Content 2</code>的边框外面。</p>
+<p>此外还可以看到浮动对于另外一个因素的影响——</p>
+<p>Margin不折叠</p>
+<h2 id="3-浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。"><a href="#3-浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。" class="headerlink" title="3. 浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。"></a>3. 浮动的非替换元素（查看<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external">可替换元素</a>的定义）会尽可能地窄。</h2>
     
 
     
@@ -395,19 +461,19 @@
             <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
     <!-- Prev Nav -->
     
-        <a href="/2017/03/24/详解CSS-float-属性/" id="post_nav-newer" class="prev-content">
-            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
-                <i class="material-icons">arrow_back</i>
-            </button>
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            新篇
-        </a>
-    
 
     <!-- Section Spacer -->
     <div class="section-spacer"></div>
 
     <!-- Next Nav -->
+    
+        <a href="/2017/03/23/Hello/" id="post_nav-older" class="next-content">
+            旧篇
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">
+                <i class="material-icons">arrow_forward</i>
+            </button>
+        </a>
     
 </nav>
 

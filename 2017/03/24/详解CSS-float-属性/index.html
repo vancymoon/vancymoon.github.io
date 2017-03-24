@@ -10,7 +10,7 @@
     
     <title>
         
-            详解CSS float 属性 | 
+            详解CSS float属性 | 
         
         君大人的写字地
     </title>
@@ -48,7 +48,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="详解CSS float 属性 | 君大人的写字地">
+    <meta property="og:title" content="详解CSS float属性 | 君大人的写字地">
     <meta property="og:description" content="null">
     <meta property="og:article:tag" content="CSS"> 
 
@@ -187,6 +187,10 @@
 
     <!-- Custom Head -->
     
+        
+            <style>#post-content code {color: #e91e63}</style>
+        
+    
 <link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
 
 
@@ -234,7 +238,7 @@
     </button>
 
     <ul class="post-toc-wrap mdl-menu mdl-menu--bottom-left mdl-js-menu mdl-js-ripple-effect" for="post-toc-trigger-btn">
-        <ol class="post-toc"><li class="post-toc-item post-toc-level-1"><a class="post-toc-link" href="#float属性给元素带来的变化"><span class="post-toc-number">1.</span> <span class="post-toc-text">float属性给元素带来的变化</span></a><ol class="post-toc-child"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#1-浮动元素会生成一个块级框，而不论它本身是何种元素。"><span class="post-toc-number">1.1.</span> <span class="post-toc-text">1. 浮动元素会生成一个块级框，而不论它本身是何种元素。</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#2-脱离文档流"><span class="post-toc-number">1.2.</span> <span class="post-toc-text">2. 脱离文档流</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#3-浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。"><span class="post-toc-number">1.3.</span> <span class="post-toc-text">3. 浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。</span></a></li></ol></li></ol>
+        <ol class="post-toc"><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#浮动的非替换元素（查看可替换元素的定义）会尽可能地窄"><span class="post-toc-number">1.</span> <span class="post-toc-text">浮动的非替换元素（查看可替换元素的定义）会尽可能地窄</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#脱离文档流"><span class="post-toc-number">2.</span> <span class="post-toc-text">脱离文档流</span></a></li><li class="post-toc-item post-toc-level-2"><a class="post-toc-link" href="#Margin不折叠"><span class="post-toc-number">3.</span> <span class="post-toc-text">Margin不折叠</span></a></li></ol>
 
         <!--
         <li class="mdl-menu__item">
@@ -270,7 +274,7 @@
         
     
             <p class="article-headline-p">
-                详解CSS float 属性
+                详解CSS float属性
             </p>
         </div>
 
@@ -329,7 +333,7 @@
 
     <!-- Share Weibo -->
     
-        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=详解CSS float 属性&url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html&pic=&searchPic=false&style=simple" target="_blank">
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=详解CSS float属性&url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html&pic=&searchPic=false&style=simple" target="_blank">
             <li class="mdl-menu__item">
                 分享到微博
             </li>
@@ -338,7 +342,7 @@
 
     <!-- Share Twitter -->
     
-        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=详解CSS float 属性&url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html&via=君大人" target="_blank">
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=详解CSS float属性&url=http://yoursite.com//2017/03/24/详解CSS-float-属性/index.html&via=君大人" target="_blank">
             <li class="mdl-menu__item">
                 分享到 Twitter
             </li>
@@ -380,7 +384,7 @@
                 <!-- Post Content -->
                 <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
     
-        <h1 id="float属性给元素带来的变化"><a href="#float属性给元素带来的变化" class="headerlink" title="float属性给元素带来的变化"></a>float属性给元素带来的变化</h1><h2 id="1-浮动元素会生成一个块级框，而不论它本身是何种元素。"><a href="#1-浮动元素会生成一个块级框，而不论它本身是何种元素。" class="headerlink" title="1. 浮动元素会生成一个块级框，而不论它本身是何种元素。"></a>1. 浮动元素会生成一个块级框，而不论它本身是何种元素。</h2><h2 id="2-脱离文档流"><a href="#2-脱离文档流" class="headerlink" title="2. 脱离文档流"></a>2. 脱离文档流</h2><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><h2 id="浮动的非替换元素（查看可替换元素的定义）会尽可能地窄"><a href="#浮动的非替换元素（查看可替换元素的定义）会尽可能地窄" class="headerlink" title="浮动的非替换元素（查看可替换元素的定义）会尽可能地窄"></a>浮动的非替换元素（查看<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external">可替换元素</a>的定义）会尽可能地窄</h2><h2 id="脱离文档流"><a href="#脱离文档流" class="headerlink" title="脱离文档流"></a>脱离文档流</h2><pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
     <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>UTF-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -435,10 +439,10 @@
 </code></pre>
 <p><img src="/img/posts/float2.png" alt="float example 2"></p>
 <p>可以看到，<code>Content 3</code>无视了<code>Content 2</code>，直接布局在<code>Content 1</code>后面。</p>
-<p><em>但是</em>！可以看到虽然<code>Content 3</code>的盒子虽然无视了<code>Content 2</code>，但是<code>Content 3</code>的文字无法无视<code>Content 2</code>整个盒子，因此<code>Content 3</code>的文字布局在<code>Content 2</code>的边框外面。</p>
+<p><em>但是</em>！可以看到虽然<code>Content 3</code>的盒子虽然无视了<code>Content 2</code>，但是<code>Content 3</code>的文字无法无视<code>Content 2</code>整个盒子，因此<code>Content 3</code>的文字布局在<code>Content 2</code>的边框外面。这也就是所谓的“浮动脱离了文档流但没有脱离文字流”</p>
 <p>此外还可以看到浮动对于另外一个因素的影响——</p>
-<p>Margin不折叠</p>
-<h2 id="3-浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。"><a href="#3-浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。" class="headerlink" title="3. 浮动的非替换元素（查看可替换元素的定义）会尽可能地窄。"></a>3. 浮动的非替换元素（查看<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/Replaced_element" target="_blank" rel="external">可替换元素</a>的定义）会尽可能地窄。</h2>
+<h2 id="Margin不折叠"><a href="#Margin不折叠" class="headerlink" title="Margin不折叠"></a>Margin不折叠</h2><p>一般来说，链各个相邻的兄弟元素会发生<a href="https://developer.mozilla.org/zh-CN/docs/Web/CSS/CSS_Box_Model/Mastering_margin_collapsing" target="_blank" rel="external">外边距合并</a>，但是如果元素是浮动的，那么这条规则将不会成立。如上图所示，<code>Content 1</code>和<code>Content 2</code>外边距为<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mn>1</mn><mn>0</mn><mi>p</mi><mi>x</mi><mo>+</mo><mn>2</mn><mn>0</mn><mi>p</mi><mi>x</mi><mo>=</mo><mn>3</mn><mn>0</mn><mi>p</mi><mi>x</mi></mrow><annotation encoding="application/x-tex">10px + 20px = 30px</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="strut" style="height:0.64444em;"></span><span class="strut bottom" style="height:0.8388800000000001em;vertical-align:-0.19444em;"></span><span class="base textstyle uncramped"><span class="mord mathrm">1</span><span class="mord mathrm">0</span><span class="mord mathit">p</span><span class="mord mathit">x</span><span class="mbin">+</span><span class="mord mathrm">2</span><span class="mord mathrm">0</span><span class="mord mathit">p</span><span class="mord mathit">x</span><span class="mrel">=</span><span class="mord mathrm">3</span><span class="mord mathrm">0</span><span class="mord mathit">p</span><span class="mord mathit">x</span></span></span></span>，而没有发生折叠。</p>
+
     
 
     
@@ -467,7 +471,7 @@
 
     <!-- Next Nav -->
     
-        <a href="/2017/03/23/Hello/" id="post_nav-older" class="next-content">
+        <a href="/2017/03/23/海街日记/" id="post_nav-older" class="next-content">
             旧篇
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <button class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon mdl-color--white mdl-color-text--grey-900" role="presentation">

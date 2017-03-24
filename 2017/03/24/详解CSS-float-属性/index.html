@@ -403,7 +403,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre>
-<p><img src="../img/posts/float1.png" alt="float example 1"><br>所谓文档流，就是我们指的盒子模型，可以看到 <code>Content 2</code>整个盒子都没有被包含进父级元素中，这就是说<code>Content 2</code>浮动后脱离了文档流。</p>
+<p><img src="/img/posts/float1.png" alt="float example 1"><br>所谓文档流，就是我们指的盒子模型，可以看到 <code>Content 2</code>整个盒子都没有被包含进父级元素中，这就是说<code>Content 2</code>浮动后脱离了文档流。</p>
 <p>再举一个脱离文档流的例子：</p>
 <pre class=" language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
@@ -433,7 +433,7 @@
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span>
 </code></pre>
-<p><img src="../img/posts/float2.png" alt="float example 2"></p>
+<p><img src="/img/posts/float2.png" alt="float example 2"></p>
 <p>可以看到，<code>Content 3</code>无视了<code>Content 2</code>，直接布局在<code>Content 1</code>后面。</p>
 <p><em>但是</em>！可以看到虽然<code>Content 3</code>的盒子虽然无视了<code>Content 2</code>，但是<code>Content 3</code>的文字无法无视<code>Content 2</code>整个盒子，因此<code>Content 3</code>的文字布局在<code>Content 2</code>的边框外面。</p>
 <p>此外还可以看到浮动对于另外一个因素的影响——</p>

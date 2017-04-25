@@ -10,8 +10,6 @@
     
     <title>
         
-            归档: 2017/4 | 
-        
         君大人的写字地
     </title>
 
@@ -48,7 +46,7 @@
     <!-- The Open Graph protocol -->
     <meta property="og:url" content="http://yoursite.com">
     <meta property="og:type" content="blog">
-    <meta property="og:title" content="归档: 2017/4 | 君大人的写字地">
+    <meta property="og:title" content="君大人的写字地">
     <meta property="og:description" content="null">
     
 
@@ -212,93 +210,284 @@
                         </button>
                     
 
-                    <!-- Index Module -->
-<div class="material-index mdl-grid">
-    
-    <div class="locate-thumbnail-symbol"></div>
+                    <!-- Post TOC -->
 
-    <!-- Pin on top -->
-    
 
-    <!-- Normal Post -->
-    
-        
-        
-            <!-- Paradox Thumbnail -->
-            <div class="post_entry-module mdl-card mdl-shadow--2dp mdl-cell mdl-cell--12-col fade out">
-    <!-- Post Thumbnail -->
+<!-- Layouts -->
+
+    <!-- Post Module -->
+    <div class="material-post_container">
+
+        <div class="material-post mdl-grid">
+            <div class="mdl-card mdl-shadow--4dp mdl-cell mdl-cell--12-col">
+
+                <!-- Post Header(Thumbnail & Title) -->
+                
+    <!-- Paradox Post Header -->
     
         
             <!-- Random Thumbnail -->
             <div class="post_thumbnail-random mdl-card__media mdl-color-text--grey-50">
-        
-    
+            <script>
+    var randomNum = Math.floor(Math.random() * 19 + 1);
 
-        <!-- Post Title -->
-        <p class="article-headline-p"><a href="/2017/04/06/verbal/"></a></p>
-    </div>
-
-    <!-- Post Excerpt -->
-    <div class="mdl-color-text--grey-600 mdl-card__supporting-text post_entry-content">
-        
-            
-        
-        &nbsp;&nbsp;&nbsp;
-        <span>
-            <a href="/2017/04/06/verbal/" target="_self">继续阅读</a>
-        </span>
-    </div>
-    <!-- Post_entry Info-->
-    <div id="post_entry-info">
-        <div id="post_entry-left-info" class="mdl-card__supporting-text meta mdl-color-text--grey-600 ">
-            <!-- Author Avatar -->
-            <div id="author-avatar">
-                <img src="/img/avatar.png" width="44px" height="44px" alt="君大人's avatar">
-            </div>
-            <div>
-                <strong>君大人</strong>
-                <span>4月 06, 2017</span>
-            </div>
-        </div>
-        <div id="post_entry-right-info">
-            <!-- Category -->
-            <span class="post_entry-category">
-                
-            </span>
-
-            
-
-            <!-- Post Views -->
-            <span class="post_entry-views">
-            </span>
-        </div>
-    </div>
-</div>
-
-        
-        
-        
-    
-
-    
-
-    
-        <script>
-    var randomNum;
-
-    var locatePost = $('.locate-thumbnail-symbol').next();
-    for(var i = 0; i < 10; i++) {
-        randomNum = Math.floor(Math.random() * 19 + 1);
-
-        locatePost.children('.post_thumbnail-random').attr('id', 'random_thumbnail-'+randomNum);
-        locatePost.children('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')')
-
-        locatePost = locatePost.next();
-    }
+    $('.post_thumbnail-random').css('background-image', 'url(' + '/img/random/material-' + randomNum + '.png' + ')');
 </script>
 
+        
+    
+            <p class="article-headline-p">
+                
+            </p>
+        </div>
+
+
+
+
+
+                
+                    <!-- Paradox Post Info -->
+                    <div class="mdl-color-text--grey-700 mdl-card__supporting-text meta">
+
+    <!-- Author Avatar -->
+    <div id="author-avatar">
+        <img src="/img/avatar.png" width="44px" height="44px" alt="Author Avatar"/>
+    </div>
+    <!-- Author Name & Date -->
+    <div>
+        <strong>君大人</strong>
+        <span>4月 25, 2017</span>
+    </div>
+
+    <div class="section-spacer"></div>
+
+    <!-- Favorite -->
+    <!--
+        <button id="article-functions-like-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon btn-like">
+            <i class="material-icons" role="presentation">favorite</i>
+            <span class="visuallyhidden">favorites</span>
+        </button>
+    -->
+
+    <!-- Qrcode -->
+    
+
+    <!-- Tags (bookmark) -->
+    
+    <button id="article-functions-viewtags-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+        <i class="material-icons" role="presentation">bookmark</i>
+        <span class="visuallyhidden">bookmark</span>
+    </button>
+    <ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-functions-viewtags-button">
+        <li class="mdl-menu__item">
+        
+    </ul>
+    
+
+    <!-- Share -->
+    <button id="article-fuctions-share-button" class="mdl-button mdl-js-button mdl-js-ripple-effect mdl-button--icon">
+    <i class="material-icons" role="presentation">share</i>
+    <span class="visuallyhidden">share</span>
+</button>
+<ul class="mdl-menu mdl-menu--bottom-right mdl-js-menu mdl-js-ripple-effect" for="article-fuctions-share-button">
+    
+
+    
+
+    <!-- Share Weibo -->
+    
+        <a class="post_share-link" href="http://service.weibo.com/share/share.php?appkey=&title=&url=http://yoursite.com//zjulinker.html&pic=&searchPic=false&style=simple" target="_blank">
+            <li class="mdl-menu__item">
+                分享到微博
+            </li>
+        </a>
+    
+
+    <!-- Share Twitter -->
+    
+        <a class="post_share-link" href="https://twitter.com/intent/tweet?text=&url=http://yoursite.com//zjulinker.html&via=君大人" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Twitter
+            </li>
+        </a>
+    
+
+    <!-- Share Facebook -->
+    
+        <a class="post_share-link" href="https://www.facebook.com/sharer/sharer.php?u=http://yoursite.com//zjulinker.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Facebook
+            </li>
+        </a>
+    
+
+    <!-- Share Google+ -->
+    
+        <a class="post_share-link" href="https://plus.google.com/share?url=http://yoursite.com//zjulinker.html" target="_blank">
+            <li class="mdl-menu__item">
+                分享到 Google+
+            </li>
+        </a>
+    
+
+    <!-- Share LinkedIn -->
+    
+
+    <!-- Share QQ -->
+    
+
+    <!-- Share Telegram -->
+    
+</ul>
+
+</div>
+
+                
+
+                <!-- Post Content -->
+                <div id="post-content" class="mdl-color-text--grey-700 mdl-card__supporting-text fade out">
+    
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css"><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ZJULinker</title>
+    <link rel="shortcut icon" type="image/x-icon" href="zjulinker.ico">
+    <link rel="stylesheet" href="zjulinker.css">
+    <link rel="stylesheet" href="font-awesome.css">
+    <script src="zjulinker.js"></script>
+<link rel="stylesheet" href="/css/prism.css" type="text/css"></head>
+<body>
+<header>
+
+    <div class="AppHeader-inner">
+        <a href="#" style="font-size: 20px">ZJUL<i class="fa fa-link fa-spin" style="font-size: smaller"></i>nker</a>
+
+        <nav class="AppHeader-nav">
+            <div onmouseover="sliderPindan()" onmouseout="hideSliderPindan()">
+                <a href="https://www.zhihu.com/" class="AppHeader-navItem" id="pindan" target="_blank" rel="external">拼单</a>
+                <nav class="menuList" id="pindanList">
+                    <ul>
+                        <li><a href=""><span>拼车</span><span><i class="fa fa-car"></i></span></a></li>
+                        <li><a href="">满减<i class="fa fa-shopping-cart"></i></a></li>
+                        <li><a href="">寄送<i class="fa fa-envelope"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div onmouseover="sliderZhengren()" onmouseout="hideSliderZhengren()">
+                <a href="https://www.zhihu.com/" class="AppHeader-navItem" id="zhengren" target="_blank" rel="external">征人</a>
+                <nav class="menuList" id="zhengrenList">
+                    <ul>
+                        <li><a href=""><span>被试</span><span><i class="fa fa-flask"></i></span></a></li>
+                        <li><a href="">旅行<i class="fa fa-plane"></i></a></li>
+                        <li><a href="">实习兼职<i class="fa fa-suitcase"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div onmouseover="sliderChushou()" onmouseout="hideSliderChushou()">
+                <a href="https://www.zhihu.com/" class="AppHeader-navItem" id="chushou" target="_blank" rel="external">交易</a>
+                <nav class="menuList" id="chushouList">
+                    <ul>
+                        <li><a href="">书籍<i class="fa fa-book"></i></a></li>
+                        <li><a href="">美妆<i class="fa fa-diamond"></i></a></li>
+                        <li><a href=""><span>电影演出</span><span><i class="fa fa-ticket"></i></span></a></li>
+                        <li><a href="">数码产品<i class="fa fa-laptop"></i></a></li>
+                    </ul>
+                </nav>
+            </div>
+            <a href="https://www.zhihu.com/topic" class="AppHeader-navItem" id="wenda" onmouseover="sliderWenda()" onmouseout="hideSliderWenda()" target="_blank" rel="external">问答</a>
+        </nav>
+
+        <div class="Searchbar">
+            <div class="Input-wrapper">
+                <input type="text" placeholder="搜索您感兴趣的内容..." class="AppHeader-input">
+                <button class="Searchbar-searchIcon"><i class="fa fa-search"></i></button>
+            </div>
+        </div>
+        <button class="button-primary">发布</button>
+
+        <div class="AppHeader-userinfo">
+            <div class="AppHeader-Userinfo-Icon">
+                <a href="#"><i class="fa fa-bell AppHeader-Userinfo-Icon"></i></a>
+                <a href="#"><i class="fa fa-comments AppHeader-Userinfo-Icon"></i></a>
+            </div>
+        </div>
+    </div>
+</header>
+<div class="Stickyholder"></div>
+<main>
+    <div class="QuestionHeader">
+        <div class="QuestionHeader-content">
+            <div class="QuestionHeader-main">
+                <div class="Tags-Wrapper">
+                    <div class="QuestionHeader-Tags">拼车</div>
+                    <div class="QuestionHeader-Tags">Ubur</div>
+                    <!--<div class="QuestionHeader-Tags">留学申请</div>-->
+                </div>
+                <h1 class="QuestionHeader-title">申请国外PhD的时候如何与教授套磁？</h1>
+                <p>所谓套磁,就是和国外教授主动通过书信往来建立联系和彼此印象,从而加大录取和拿奖学金可能性的一种行为。</p>
+            </div>
+        </div>
+
+
+        <div class="QuestionHeader-footer">
+            <div class="QuestionHeader-footer-Item-wrapper">
+                <button>
+                    <i class="fa fa-comment QuestionHeader-footer-Icon"></i>条评论
+                </button>
+                <button>
+                    <i class="fa fa-paper-plane QuestionHeader-footer-Icon"></i>分享
+                </button>
+                <button>
+                    <i class="fa fa-star QuestionHeader-footer-Icon"></i>邀请
+                </button>
+                <button>
+                    <i class="fa fa-flag QuestionHeader-footer-Icon"></i>举报
+                </button>
+            </div>
+            <div class="QuestionHeader-footer-sider">
+                <button class="button-primary">提交</button>
+            </div>
+        </div>
+    </div>
+</main>
+</body>
+</html>
+    
+
     
 </div>
+
+
+                
+
+                <!-- Post Comments -->
+                
+                    
+
+
+
+
+                
+            </div>
+
+            <!-- Post Prev & Next Nav -->
+            <nav class="material-nav mdl-color-text--grey-50 mdl-cell mdl-cell--12-col">
+    <!-- Prev Nav -->
+    
+
+    <!-- Section Spacer -->
+    <div class="section-spacer"></div>
+
+    <!-- Next Nav -->
+    
+</nav>
+
+        </div>
+    </div>
+
 
 
                     
@@ -378,7 +567,7 @@
             </a>
             <ul class="dropdown-menu">
             <li>
-                <a class="sidebar_archives-link" href="/archives/2017/04/">四月 2017<span class="sidebar_archives-count">1</span></a></li><li><a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">2</span></a>
+                <a class="sidebar_archives-link" href="/archives/2017/03/">三月 2017<span class="sidebar_archives-count">3</span></a>
             </ul>
         </li>
         
@@ -444,14 +633,6 @@ It will not impact the appearance and can give developers a lot of support :)
 </aside>
 
                     
-
-                    
-                        <!-- Footer Top Button -->
-                        <div class="toTop-wrap">
-    <a href="#top" class="toTop">
-        <i class="material-icons footer_top-i">expand_less</i>
-    </a>
-</div>
 
                     
 

@@ -1,4 +1,4 @@
-<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css">/**
+/**
  * Created by dongming on 2017/4/25.
  */
 function sliderPindan() {

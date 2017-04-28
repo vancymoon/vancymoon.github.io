@@ -10,11 +10,11 @@ body {
 
 a {
     text-decoration: none;
-    color: #4285f4;
+    color: #fff;
 }
 
 ul a {
-    color: #777777;
+    color: #fff;
 }
 
 button {
@@ -70,11 +70,11 @@ li a {
 }
 
 header {
-    background-color: #fafafa;
+    background-color: #171717;
     width: 100%;
     position: fixed;
     z-index: 999;
-    border-bottom: 1px solid rgba(30, 35, 42, .06);
+    /*border-bottom: 1px solid rgba(30, 35, 42, .06);*/
     box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
 }
 
@@ -101,7 +101,7 @@ header {
 }
 
 .AppHeader-nav a:hover {
-    color: #4285f4;
+    color: white;
     font-weight: 500;
 }
 
@@ -278,25 +278,63 @@ header {
     border-top: 3px solid transparent;
     border-bottom: 3px solid transparent;
     padding: 8px 35px 3px;
-    color: #777777;
+    color: #dadada;
     height: 52px;
     transition: .5s;
     /*position: relative;*/
     z-index: 100;
-    background-color: #fafafa;
+    background-color: #171717;
 }
 
 .menuList {
     position: absolute;
     top: 20px;
     width: 100px;
-    background-color: #fafafa;
+    background-color: rgba(0, 0, 0, .7);
     visibility: hidden;
     transition: .1s;
     z-index: -1;
 }
 
+.menuList a {
+    color: #dadada;
+}
+
+.menuList a:hover {
+    font-size: 500;
+}
+/*#pindanList a:hover{
+    color: #ea4335;
+}
+
+#zhengrenList a:hover {
+    color: #fbbc05;
+}
+
+#chushouList a:hover {
+    color: #34a853;
+}
+
+#wendaList a:hover {
+    color: #4285f4;
+}*/
+
 .menuList ul {
     line-height: 35px;
     padding: 0 10px;
+}
+
+@media (max-width: 768px) {
+    .AppHeader-nav {
+        display: none;
+    }
+    .Searchbar {
+        display: none;
+    }
+    .AppHeader-inner {
+        width: 100%;
+    }
+    .QuestionHeader-content {
+        width: 100%;
+    }
 }

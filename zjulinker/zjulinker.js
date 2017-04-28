@@ -2,7 +2,7 @@
  * Created by dongming on 2017/4/25.
  */
 function sliderPindan() {
-    document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #4285f4;";
+    document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
     document.getElementById('pindanList').style.cssText = "visibility: visible; top: 52px;";
 }
 
@@ -12,7 +12,7 @@ function hideSliderPindan() {
 }
 
 function sliderZhengren() {
-    document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid #4285f4;";
+    document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid #fbbc05;";
     document.getElementById('zhengrenList').style.cssText = "visibility: visible; top: 52px;";
 }
 
@@ -22,7 +22,7 @@ function hideSliderZhengren() {
 }
 
 function sliderChushou() {
-    document.getElementById('chushou').style.cssText = "border-bottom: 3px solid #4285f4;";
+    document.getElementById('chushou').style.cssText = "border-bottom: 3px solid #34a853;";
     document.getElementById('chushouList').style.cssText = "visibility: visible; top: 52px;";}
 
 function hideSliderChushou() {

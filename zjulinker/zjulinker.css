@@ -80,7 +80,7 @@ header {
 
 .AppHeader-inner {
     display: flex;
-    padding: 0 16px;
+    padding-left: 16px;
     margin: 0 auto;
     width: 1000px;
     height: 52px;
@@ -332,7 +332,7 @@ header {
         display: none;
     }
     .AppHeader-inner {
-        width: 100%;
+        width: 90%;
     }
     .QuestionHeader-content {
         width: 100%;

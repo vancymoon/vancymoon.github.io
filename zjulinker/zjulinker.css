@@ -238,7 +238,7 @@ header {
 }
 
 .QuestionHeader-footer-sider {
-    width: 400px;
+    flex: 1;
     text-align: right;
 }
 
@@ -253,7 +253,7 @@ header {
 
 .QuestionHeader-footer-Item-wrapper {
     display: flex;
-    width: 600px;
+    width: 360px;
 }
 
 .QuestionHeader-footer-Item-wrapper button {
@@ -335,6 +335,9 @@ header {
         width: 90%;
     }
     .QuestionHeader-content {
+        width: 100%;
+    }
+    .QuestionHeader-footer {
         width: 100%;
     }
 }

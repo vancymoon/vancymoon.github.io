@@ -189,6 +189,7 @@ header {
 
 .QuestionHeader-main {
     width: 694px;
+    margin-left: 20px;
 }
 
 .QuestionHeader-title {
@@ -254,6 +255,7 @@ header {
 .QuestionHeader-footer-Item-wrapper {
     display: flex;
     width: 360px;
+    margin-left: 10px;
 }
 
 .QuestionHeader-footer-Item-wrapper button {

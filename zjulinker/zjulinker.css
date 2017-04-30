@@ -160,7 +160,7 @@ header {
     font-size: 18px
 }
 
-.AppHeader-Userinfo-Icon {
+.AppHeader-Userinfo-Icon i:before {
     padding: 5px;
     font-size: 20px;
     color: #9fadc7
@@ -302,9 +302,6 @@ header {
     color: #dadada;
 }
 
-.menuList a:hover {
-    font-size: 500;
-}
 /*#pindanList a:hover{
     color: #ea4335;
 }
@@ -326,6 +323,10 @@ header {
     padding: 0 10px;
 }
 
+.AppHeader-menubar i:before {
+    color: transparent;
+}
+
 @media (max-width: 768px) {
     .AppHeader-nav {
         display: none;
@@ -336,10 +337,22 @@ header {
     .AppHeader-inner {
         width: 90%;
     }
+    .QuestionHeader {
+        margin: 0 auto;
+    }
     .QuestionHeader-content {
         width: 100%;
     }
     .QuestionHeader-footer {
         width: 100%;
+    }
+    #publish {
+        display: none;
+    }
+    .AppHeader-menubar {
+        visibility: visible;
+    }
+    .AppHeader-menubar i:before {
+        color: white;
     }
 }

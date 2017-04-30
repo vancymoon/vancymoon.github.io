@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,inital-scale=1.0,maximum-scale=1.0,user-scalable=no;" />
+    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
     <title>ZJULinker</title>
     <link rel="shortcut icon" type="image/x-icon" href="zjulinker.ico">
     <link rel="stylesheet" href="zjulinker.css">
@@ -58,14 +58,16 @@
                 <button class="Searchbar-searchIcon"><i class="fa fa-search"></i></button>
             </div>
         </div>
-        <button class="button-primary">发布</button>
+        <button class="button-primary" id="publish">发布</button>
 
         <div class="AppHeader-userinfo">
             <div class="AppHeader-Userinfo-Icon">
-                <a href="#"><i class="fa fa-bell AppHeader-Userinfo-Icon"></i></a>
-                <a href="#"><i class="fa fa-comments AppHeader-Userinfo-Icon"></i></a>
+                <a href="#"><i class="fa fa-bell"></i></a>
+                <a href="#"><i class="fa fa-comments"></i></a>
+                <span class="AppHeader-menubar" onclick="toggleMenuBar()"><i class="fa fa-bars"></i></span>
             </div>
         </div>
+
     </div>
 </header>
 <div class="Stickyholder"></div>

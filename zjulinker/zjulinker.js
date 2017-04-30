@@ -37,3 +37,8 @@ function sliderWenda() {
 function hideSliderWenda() {
     document.getElementById('wenda').style.cssText = "border-bottom: 3px solid transparent;";
 }
+
+function toggleMenuBar() {
+    var appHeaderNav = document.getElementsByClassName('AppHeader-nav')[0];
+    appHeaderNav.style.cssText = "display: block";
+}

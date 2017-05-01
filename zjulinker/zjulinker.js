@@ -1,6 +1,7 @@
 /**
  * Created by dongming on 2017/4/25.
  */
+var toggleState = false;
 function sliderPindan() {
     document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
     document.getElementById('pindanList').style.cssText = "visibility: visible; top: 52px;";
@@ -39,6 +40,14 @@ function hideSliderWenda() {
 }
 
 function toggleMenuBar() {
-    var appHeaderNav = document.getElementsByClassName('AppHeader-nav')[0];
-    appHeaderNav.style.cssText = "display: block";
+    var menuSlider = document.getElementsByClassName('AppHeader-nav')[0];
+    // var menuList = document.getElementsByClassName('menuList')[0];
+    // var first_rule = document.styleSheets[0].cssRules;
+    // console.log(first_rule);
+    if (toggleState) {
+        menuSlider.style.cssText = "display: none";
+    } else {
+        menuSlider.style.cssText = "display: block";
+    }
+    toggleState = !toggleState;
 }

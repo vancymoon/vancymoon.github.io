@@ -98,6 +98,7 @@ header {
     margin-right: 18px;
     color: #999;
     font-size: 15px;
+    transition: 1s;
 }
 
 .AppHeader-nav a:hover {
@@ -167,7 +168,7 @@ header {
 }
 
 .Stickyholder {
-    height: 53px;
+    height: 52px;
     width: 100%;
 }
 
@@ -290,11 +291,11 @@ header {
 
 .menuList {
     position: absolute;
-    top: 20px;
+    top: -50px;
     width: 100px;
     background-color: rgba(0, 0, 0, .7);
     visibility: hidden;
-    transition: .1s;
+    transition: .3s;
     z-index: -1;
 }
 
@@ -327,32 +328,71 @@ header {
     color: transparent;
 }
 
+.menu-slider {
+    position: absolute;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    background-color: #f7f8fa;
+    visibility: hidden;
+    left: -60%;
+    transition: .3s;
+    /*opacity: .7;*/
+}
+
+.menu-slider a {
+    color: #212121;
+}
+
 @media (max-width: 768px) {
     .AppHeader-nav {
         display: none;
+        position: absolute;
+        top: 52px;
+        width: 60%;
+        left: 0;
+        margin-left: 0
     }
+
+    .menuList {
+        position: relative;
+        top: 0;
+        display: none;
+    }
+
     .Searchbar {
         display: none;
     }
+
     .AppHeader-inner {
         width: 90%;
     }
+
     .QuestionHeader {
         margin: 0 auto;
     }
+
     .QuestionHeader-content {
         width: 100%;
     }
+
     .QuestionHeader-footer {
         width: 100%;
     }
+
     #publish {
         display: none;
     }
+
     .AppHeader-menubar {
         visibility: visible;
     }
+
     .AppHeader-menubar i:before {
         color: white;
+    }
+
+    .menu-slider {
+        width: 60%;
     }
 }

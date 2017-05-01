@@ -17,9 +17,9 @@ function sliderPindan() {
 }
 
 function hideSliderPindan() {
-    document.getElementById('pindanList').style.cssText = "visibility: hidden;";
     if (!menuBarToggle) {
         document.getElementById('pindan').style.cssText = "border-bottom: 3px solid transparent;";
+        document.getElementById('pindanList').style.cssText = "visibility: hidden;";
     }
     if (menuBarToggle) {
         document.getElementById('pindan').style.cssText = "border-left: 3px solid transparent;";
@@ -40,9 +40,9 @@ function sliderZhengren() {
 }
 
 function hideSliderZhengren() {
-    document.getElementById('zhengrenList').style.cssText = "visibility: hidden;";
     if (!menuBarToggle) {
         document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid transparent;";
+        document.getElementById('zhengrenList').style.cssText = "visibility: hidden;";
     }
     if (menuBarToggle) {
         document.getElementById('zhengren').style.cssText = "border-left: 3px solid transparent;";
@@ -63,9 +63,9 @@ function sliderChushou() {
 }
 
 function hideSliderChushou() {
-    document.getElementById('chushouList').style.cssText = "visibility: hidden;";
     if (!menuBarToggle) {
         document.getElementById('chushou').style.cssText = "border-bottom: 3px solid transparent;";
+        document.getElementById('chushouList').style.cssText = "visibility: hidden;";
     }
     if (menuBarToggle) {
         document.getElementById('chushouList').style.cssText += "height: 0;";

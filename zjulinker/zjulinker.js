@@ -4,12 +4,15 @@
 var toggleState = false;
 function sliderPindan() {
     document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
-    document.getElementById('pindanList').style.cssText = "visibility: visible; top: 52px;";
+    document.getElementById('pindanList').style.cssText = "display:block; visibility: visible; top: 52px;";
+    if (toggleState) {
+        document.getElementById('pindanList').style.cssText = "display:block; visibility: visible; top: 0;";
+    }
 }
 
 function hideSliderPindan() {
     document.getElementById('pindan').style.cssText = "border-bottom: 3px solid transparent;";
-    document.getElementById('pindanList').style.cssText = "visibility: hidden;";
+    document.getElementById('pindanList').style.cssText = "display:none; visibility: hidden;";
 }
 
 function sliderZhengren() {

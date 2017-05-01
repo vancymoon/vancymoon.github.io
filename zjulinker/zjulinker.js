@@ -98,14 +98,19 @@ function hideSliderWenda() {
 
 function toggleMenuBar() {
     var menuSlider = document.getElementsByClassName('AppHeader-nav')[0];
-    // var menuList = document.getElementsByClassName('menuList')[0];
+    var shadowbox = document.getElementsByClassName('shadowbox')[0];
+    shadowbox.style.cssText = "display: block"
+// var menuList = document.getElementsByClassName('menuList')[0];
     // var first_rule = document.styleSheets[0].cssRules;
     // console.log(first_rule);
     if (menuBarToggle) {
         menuSlider.style.cssText = "display: none";
+        shadowbox.style.cssText = "display: none";
     } else {
         menuSlider.style.cssText = "display: block;";
         menuSlider.style.height =  screenHeight;
+        shadowbox.style.height =  screenHeight;
+
     }
     menuBarToggle = !menuBarToggle;
 }

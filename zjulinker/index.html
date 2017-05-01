@@ -2,17 +2,18 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta name="viewport"
+          content="width=device-width,height=device-height,initial-scale=1.0,maximum-scale=1.0,user-scalable=no"/>
     <title>ZJULinker</title>
     <link rel="shortcut icon" type="image/x-icon" href="zjulinker.ico">
-    <link rel="stylesheet" href="zjulinker.css?=1.0">
     <link rel="stylesheet" href="font-awesome.css">
-    <script src="zjulinker.js"></script>
+    <link rel="stylesheet" href="zjulinker.css?=1.0">
 </head>
 <body>
 <header>
     <div class="AppHeader-inner">
-        <a href="http://toming.xyz" style="font-size: 20px">ZJUL<i class="fa fa-link fa-spin" style="font-size: smaller"></i>nker</a>
+        <a href="http://toming.xyz" style="font-size: 20px">ZJUL<i class="fa fa-link fa-spin"
+                                                                   style="font-size: smaller"></i>nker</a>
 
         <nav class="AppHeader-nav">
             <div onmouseover="sliderPindan()" onmouseout="hideSliderPindan()">
@@ -48,8 +49,12 @@
                     </ul>
                 </nav>
             </div>
-            <a href="#topic" class="AppHeader-navItem" id="wenda" onmouseover="sliderWenda()"
-               onmouseout="hideSliderWenda()">问答</a>
+
+            <div onmouseover="sliderWenda()" onmouseout="hideSliderWenda()">
+                <a href="#" class="AppHeader-navItem" id="wenda">问答</a>
+            </div>
+
+            <div class="menuSticker"></div>
         </nav>
 
         <div class="Searchbar">
@@ -72,10 +77,10 @@
 </header>
 <div class="Stickyholder"></div>
 <!--<nav class="menu-slider">-->
-    <!--<a href="">拼单</a>-->
-    <!--<a href="">征人</a>-->
-    <!--<a href="">交易</a>-->
-    <!--<a href="">问答</a>-->
+<!--<a href="">拼单</a>-->
+<!--<a href="">征人</a>-->
+<!--<a href="">交易</a>-->
+<!--<a href="">问答</a>-->
 <!--</nav>-->
 <main>
     <div class="QuestionHeader">
@@ -93,9 +98,9 @@
 
         <div class="QuestionHeader-footer">
             <div class="QuestionHeader-footer-Item-wrapper">
-<!--                 <button>
-                    <i class="fa fa-comment QuestionHeader-footer-Icon"></i>条评论
-                </button> -->
+                <!--                 <button>
+                                    <i class="fa fa-comment QuestionHeader-footer-Icon"></i>条评论
+                                </button> -->
                 <button>
                     <i class="fa fa-paper-plane QuestionHeader-footer-Icon"></i>分享
                 </button>
@@ -106,11 +111,12 @@
                     <i class="fa fa-flag QuestionHeader-footer-Icon"></i>举报
                 </button>
             </div>
-<!--             <div class="QuestionHeader-footer-sider">
-                <button class="button-primary">提交</button>
-            </div> -->
+            <!--             <div class="QuestionHeader-footer-sider">
+                            <button class="button-primary">提交</button>
+                        </div> -->
         </div>
     </div>
 </main>
 </body>
+<script src="zjulinker.js?=1.0"></script>
 </html>

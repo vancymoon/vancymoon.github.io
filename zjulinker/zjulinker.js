@@ -3,7 +3,8 @@
  */
 var menuBarToggle = false;
 var listToggle = false;
-
+console.log(window.screen.availHeight);
+screenHeight = window.screen.availHeight + 'px';
 function sliderPindan() {
     document.getElementById('pindanList').style.cssText = "visibility: visible";
     if (!menuBarToggle) {
@@ -11,7 +12,7 @@ function sliderPindan() {
         document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
     }
     if (menuBarToggle) {
-        document.getElementById('pindanList').style.cssText += "height: 105px;;";
+        document.getElementById('pindanList').style.cssText += "height: 105px; z-index: 100;";
         document.getElementById('pindan').style.cssText = "border-left: 3px solid #ea4335;";
     }
 }
@@ -23,7 +24,7 @@ function hideSliderPindan() {
     }
     if (menuBarToggle) {
         document.getElementById('pindan').style.cssText = "border-left: 3px solid transparent;";
-        document.getElementById('pindanList').style.cssText += "height: 0; visibility: hidden";
+        document.getElementById('pindanList').style.cssText += "visibility: hidden; height: 0;";
     }
 }
 
@@ -68,7 +69,7 @@ function hideSliderChushou() {
         document.getElementById('chushouList').style.cssText = "visibility: hidden;";
     }
     if (menuBarToggle) {
-        document.getElementById('chushouList').style.cssText += "height: 0;";
+        document.getElementById('chushouList').style.cssText += "height: 0; visibility: hidden";
         document.getElementById('chushou').style.cssText = "border-left: 3px solid transparent;";
     }
 }
@@ -87,7 +88,12 @@ function sliderWenda() {
 }
 
 function hideSliderWenda() {
-    document.getElementById('wenda').style.cssText = "border-bottom: 3px solid transparent;";
+    if (!menuBarToggle) {
+        document.getElementById('wenda').style.cssText = "border-bottom: 3px solid transparent;";
+    }
+    if (menuBarToggle) {
+        document.getElementById('wenda').style.cssText = "border-left: 3px solid transparent;";
+    }
 }
 
 function toggleMenuBar() {
@@ -98,7 +104,8 @@ function toggleMenuBar() {
     if (menuBarToggle) {
         menuSlider.style.cssText = "display: none";
     } else {
-        menuSlider.style.cssText = "display: block";
+        menuSlider.style.cssText = "display: block;";
+        menuSlider.style.height =  screenHeight;
     }
     menuBarToggle = !menuBarToggle;
 }

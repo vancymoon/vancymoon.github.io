@@ -285,7 +285,6 @@ header {
     color: #dadada;
     height: 52px;
     transition: .5s;
-    /*position: relative;*/
     z-index: 100;
     background-color: #171717;
 }
@@ -294,7 +293,8 @@ header {
     position: absolute;
     top: -140px;
     width: 100px;
-    background-color: rgba(0, 0, 0, .7);
+    /*background-color: rgba(0, 0, 0, .7);*/
+    background-color: #373737;
     visibility: hidden;
     transition: .5s;
     z-index: -1;
@@ -349,24 +349,41 @@ header {
     display: block;
 }
 
+.menuSticker {
+    position: relative;
+    z-index: 100;
+    width: 150px;
+    height: 200px;
+    background-color: white;
+    display: none;
+}
+
 @media (max-width: 768px) {
     .AppHeader-nav {
         display: none;
         position: absolute;
-        /*background-color: #171717;*/
+        background-color: white;
         top: 52px;
         width: 60%;
+        height: 500px;
         left: 0;
         margin-left: 0
+    }
+
+    .AppHeader-nav a:hover {
+        color: #171717;
     }
 
     .AppHeader-navItem {
         border: none;
         border-left: 3px solid transparent;
+        background-color: #ffffff;
+        color: #373737;
     }
 
     .menuList {
         position: relative;
+        background-color: white;
         /*display: none;*/
         top: 0;
         height: 0;
@@ -374,6 +391,10 @@ header {
         /*z-index: 100;*/
         border: none;
         border-left: 3px solid transparent;
+    }
+
+    .menuList a {
+        color: #575757;
     }
 
     .Searchbar {
@@ -410,5 +431,9 @@ header {
 
     .menu-slider {
         width: 60%;
+    }
+
+    .menuSticker {
+        display: block;
     }
 }

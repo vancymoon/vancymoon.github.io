@@ -367,7 +367,9 @@ header {
         width: 60%;
         height: 500px;
         left: 0;
-        margin-left: 0
+        margin: 0;
+        border-right: 1px solid transparent;
+        box-shadow: 0 1px 3px 0 rgba(0, 34, 77, .05);
     }
 
     .AppHeader-nav a:hover {

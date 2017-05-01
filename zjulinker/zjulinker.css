@@ -17,6 +17,10 @@ ul a {
     color: #fff;
 }
 
+a:hover {
+    cursor: pointer;
+}
+
 button {
     outline: none;
     border: none;
@@ -98,17 +102,13 @@ header {
     margin-right: 18px;
     color: #999;
     font-size: 15px;
-    transition: 1s;
+    transition: .5s;
 }
 
 .AppHeader-nav a:hover {
     color: white;
     font-weight: 500;
 }
-
-/*.AppHeader-navItem:first-child {*/
-/*padding-left: 0;*/
-/*}*/
 
 .Searchbar {
     display: flex;
@@ -291,11 +291,11 @@ header {
 
 .menuList {
     position: absolute;
-    top: -50px;
+    top: -140px;
     width: 100px;
     background-color: rgba(0, 0, 0, .7);
     visibility: hidden;
-    transition: .3s;
+    transition: .5s;
     z-index: -1;
 }
 
@@ -336,12 +336,16 @@ header {
     background-color: #f7f8fa;
     visibility: hidden;
     left: -60%;
-    transition: .3s;
+    transition: .5s;
     /*opacity: .7;*/
 }
 
 .menu-slider a {
     color: #212121;
+}
+
+.displayblock {
+    display: block;
 }
 
 @media (max-width: 768px) {
@@ -356,8 +360,10 @@ header {
 
     .menuList {
         position: relative;
-        display: none;
-        height: 0px;
+        /*display: none;*/
+        top: 0;
+        height: 0;
+        transition: .5s;
     }
 
     .Searchbar {

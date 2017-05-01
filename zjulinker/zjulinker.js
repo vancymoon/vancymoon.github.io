@@ -57,7 +57,7 @@ function sliderChushou() {
         document.getElementById('chushou').style.cssText = "border-bottom: 3px solid #34a853;";
     }
     if (menuBarToggle) {
-        document.getElementById('chushouList').style.cssText += "height: 105px; z-index: 100;";
+        document.getElementById('chushouList').style.cssText += "height: 140px; z-index: 100;";
         document.getElementById('chushou').style.cssText = "border-left: 3px solid #34a853;";
     }
 }
@@ -81,7 +81,7 @@ function sliderWenda() {
         document.getElementById('wenda').style.cssText = "border-bottom: 3px solid #4285f4;";
     }
     if (menuBarToggle) {
-        document.getElementById('wenda').style.cssText += "height: 140px;";
+        // document.getElementById('wenda').style.cssText += "height: 140px;";
         document.getElementById('wenda').style.cssText = "border-left: 3px solid #4285f4;";
     }
 }

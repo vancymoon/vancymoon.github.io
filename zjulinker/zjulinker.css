@@ -293,7 +293,7 @@ header {
 .menuList {
     position: absolute;
     top: -140px;
-    width: 103px;
+    width: 100px;
     background-color: rgba(0, 0, 0, .7);
     visibility: hidden;
     transition: .5s;
@@ -373,6 +373,7 @@ header {
         transition: .5s;
         /*z-index: 100;*/
         border: none;
+        border-left: 3px solid transparent;
     }
 
     .Searchbar {

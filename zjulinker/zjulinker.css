@@ -367,15 +367,28 @@ header {
     top: 52px;
 }
 
+
+@keyframes baricon-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(90deg);
+        transform: rotate(90deg);
+    }
+}
+
+
 @media (max-width: 768px) {
     .AppHeader-nav {
-        display: none;
+        display: block;
         position: absolute;
         background-color: white;
         top: 52px;
         width: 40%;
         height: 500px;
-        left: 0;
+        left: -45%;
         margin: 0;
         border-right: 1px solid transparent;
         box-shadow: 0 1px 3px 5px rgba(0, 34, 77, .05);

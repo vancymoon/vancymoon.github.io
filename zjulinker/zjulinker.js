@@ -7,6 +7,7 @@ function sliderPindan() {
     document.getElementById('pindanList').style.cssText = "display:block; visibility: visible; top: 52px;";
     if (toggleState) {
         document.getElementById('pindanList').style.cssText = "display:block; visibility: visible; top: 0;";
+        document.getElementsByClassName('menuList')[0].style.cssText = "height: auto;";
     }
 }
 

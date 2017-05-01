@@ -357,6 +357,7 @@ header {
     .menuList {
         position: relative;
         display: none;
+        height: 0px;
     }
 
     .Searchbar {

@@ -23,8 +23,7 @@ function hideSliderPindan() {
     }
     if (menuBarToggle) {
         document.getElementById('pindan').style.cssText = "border-left: 3px solid transparent;";
-        document.getElementById('pindanList').style.cssText += "height: 0;";
-        toggleMenuBar();
+        document.getElementById('pindanList').style.cssText += "height: 0; visibility: hidden";
     }
 }
 
@@ -47,7 +46,7 @@ function hideSliderZhengren() {
     }
     if (menuBarToggle) {
         document.getElementById('zhengren').style.cssText = "border-left: 3px solid transparent;";
-        document.getElementById('zhengrenList').style.cssText += "height: 0;";
+        document.getElementById('zhengrenList').style.cssText += "height: 0; visibility: hidden";
     }
 }
 

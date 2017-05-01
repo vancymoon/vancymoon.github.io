@@ -292,7 +292,7 @@ header {
 .menuList {
     position: absolute;
     top: -140px;
-    width: 100px;
+    width: 103px;
     background-color: rgba(0, 0, 0, .7);
     visibility: hidden;
     transition: .5s;
@@ -352,10 +352,16 @@ header {
     .AppHeader-nav {
         display: none;
         position: absolute;
+        /*background-color: #171717;*/
         top: 52px;
         width: 60%;
         left: 0;
         margin-left: 0
+    }
+
+    .AppHeader-navItem {
+        border: none;
+        border-left: 3px solid transparent;
     }
 
     .menuList {
@@ -364,6 +370,8 @@ header {
         top: 0;
         height: 0;
         transition: .5s;
+        /*z-index: 100;*/
+        border: none;
     }
 
     .Searchbar {

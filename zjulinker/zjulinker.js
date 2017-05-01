@@ -5,13 +5,14 @@ var menuBarToggle = false;
 var listToggle = false;
 
 function sliderPindan() {
-    document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
     document.getElementById('pindanList').style.cssText = "visibility: visible";
     if (!menuBarToggle) {
         document.getElementById('pindanList').style.cssText += "top: 52px;";
+        document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
     }
     if (menuBarToggle) {
         document.getElementById('pindanList').style.cssText += "height: 105px;";
+        document.getElementById('pindan').style.cssText = "border-left: 3px solid #ea4335;";
     }
 }
 
@@ -24,13 +25,14 @@ function hideSliderPindan() {
 }
 
 function sliderZhengren() {
-    document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid #fbbc05;";
     document.getElementById('zhengrenList').style.cssText = "visibility: visible";
     if (!menuBarToggle) {
         document.getElementById('zhengrenList').style.cssText += "top: 52px;";
+        document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid #fbbc05;";
     }
     if (menuBarToggle) {
         document.getElementById('zhengrenList').style.cssText += "height: 105px;";
+        document.getElementById('zhengren').style.cssText = "border-left: 3px solid #fbbc05;";
     }
 }
 
@@ -43,13 +45,14 @@ function hideSliderZhengren() {
 }
 
 function sliderChushou() {
-    document.getElementById('chushou').style.cssText = "border-bottom: 3px solid #34a853;";
     document.getElementById('chushouList').style.cssText = "visibility: visible";
     if (!menuBarToggle) {
         document.getElementById('chushouList').style.cssText += "top: 52px;";
+        document.getElementById('chushou').style.cssText = "border-bottom: 3px solid #34a853;";
     }
     if (menuBarToggle) {
         document.getElementById('chushouList').style.cssText += "height: 105px;";
+        document.getElementById('chushou').style.cssText = "border-left: 3px solid #34a853;";
     }
 }
 
@@ -62,7 +65,16 @@ function hideSliderChushou() {
 }
 
 function sliderWenda() {
-    document.getElementById('wenda').style.cssText = "border-bottom: 3px solid #4285f4;";
+    // document.getElementById('wenda').style.cssText = "border-bottom: 3px solid #4285f4;";
+    document.getElementById('wenda').style.cssText = "visibility: visible";
+    if (!menuBarToggle) {
+        document.getElementById('wenda').style.cssText += "top: 52px;";
+        document.getElementById('wenda').style.cssText = "border-bottom: 3px solid #4285f4;";
+    }
+    if (menuBarToggle) {
+        document.getElementById('wenda').style.cssText += "height: 105px;";
+        document.getElementById('wenda').style.cssText = "border-left: 3px solid #4285f4;";
+    }
 }
 
 function hideSliderWenda() {

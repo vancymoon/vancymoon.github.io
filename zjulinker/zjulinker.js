@@ -11,15 +11,18 @@ function sliderPindan() {
         document.getElementById('pindan').style.cssText = "border-bottom: 3px solid #ea4335;";
     }
     if (menuBarToggle) {
-        document.getElementById('pindanList').style.cssText += "height: 105px;";
+        document.getElementById('pindanList').style.cssText += "height: 105px;;";
         document.getElementById('pindan').style.cssText = "border-left: 3px solid #ea4335;";
     }
 }
 
 function hideSliderPindan() {
-    document.getElementById('pindan').style.cssText = "border-bottom: 3px solid transparent;";
     document.getElementById('pindanList').style.cssText = "visibility: hidden;";
+    if (!menuBarToggle) {
+        document.getElementById('pindan').style.cssText = "border-bottom: 3px solid transparent;";
+    }
     if (menuBarToggle) {
+        document.getElementById('pindan').style.cssText = "border-left: 3px solid transparent;";
         document.getElementById('pindanList').style.cssText += "height: 0;";
     }
 }
@@ -31,15 +34,18 @@ function sliderZhengren() {
         document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid #fbbc05;";
     }
     if (menuBarToggle) {
-        document.getElementById('zhengrenList').style.cssText += "height: 105px;";
+        document.getElementById('zhengrenList').style.cssText += "height: 105px; z-index: 100;";
         document.getElementById('zhengren').style.cssText = "border-left: 3px solid #fbbc05;";
     }
 }
 
 function hideSliderZhengren() {
-    document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid transparent;";
     document.getElementById('zhengrenList').style.cssText = "visibility: hidden;";
+    if (!menuBarToggle) {
+        document.getElementById('zhengren').style.cssText = "border-bottom: 3px solid transparent;";
+    }
     if (menuBarToggle) {
+        document.getElementById('zhengren').style.cssText = "border-left: 3px solid transparent;";
         document.getElementById('zhengrenList').style.cssText += "height: 0;";
     }
 }
@@ -51,16 +57,19 @@ function sliderChushou() {
         document.getElementById('chushou').style.cssText = "border-bottom: 3px solid #34a853;";
     }
     if (menuBarToggle) {
-        document.getElementById('chushouList').style.cssText += "height: 105px;";
+        document.getElementById('chushouList').style.cssText += "height: 105px; z-index: 100;";
         document.getElementById('chushou').style.cssText = "border-left: 3px solid #34a853;";
     }
 }
 
 function hideSliderChushou() {
-    document.getElementById('chushou').style.cssText = "border-bottom: 3px solid transparent;";
     document.getElementById('chushouList').style.cssText = "visibility: hidden;";
+    if (!menuBarToggle) {
+        document.getElementById('chushou').style.cssText = "border-bottom: 3px solid transparent;";
+    }
     if (menuBarToggle) {
         document.getElementById('chushouList').style.cssText += "height: 0;";
+        document.getElementById('chushou').style.cssText = "border-left: 3px solid transparent;";
     }
 }
 
@@ -72,7 +81,7 @@ function sliderWenda() {
         document.getElementById('wenda').style.cssText = "border-bottom: 3px solid #4285f4;";
     }
     if (menuBarToggle) {
-        document.getElementById('wenda').style.cssText += "height: 105px;";
+        document.getElementById('wenda').style.cssText += "height: 140px;";
         document.getElementById('wenda').style.cssText = "border-left: 3px solid #4285f4;";
     }
 }

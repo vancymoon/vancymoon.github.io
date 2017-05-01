@@ -24,6 +24,7 @@ function hideSliderPindan() {
     if (menuBarToggle) {
         document.getElementById('pindan').style.cssText = "border-left: 3px solid transparent;";
         document.getElementById('pindanList').style.cssText += "height: 0;";
+        toggleMenuBar();
     }
 }
 

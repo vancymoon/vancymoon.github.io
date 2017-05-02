@@ -266,6 +266,7 @@ header {
     font-size: 14px;
     cursor: pointer;
     margin: 10px;
+    margin-right: 10%;
 }
 
 .QuestionHeader-footer-Icon {
@@ -390,8 +391,8 @@ header {
         height: 500px;
         left: -45%;
         margin: 0;
-        border-right: 1px solid transparent;
-        box-shadow: 0 1px 3px 5px rgba(0, 34, 77, .05);
+        border-right: 1px solid #e7eaf1;
+        box-shadow: 0 1px 3px 10px rgba(0, 34, 77, .05);
     }
 
     .AppHeader-nav a:hover {

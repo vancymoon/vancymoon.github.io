@@ -93,9 +93,67 @@
   -webkit-animation: fa-spin 2s infinite linear;
   animation: fa-spin 2s infinite linear;
 }
+.fa-discolor {
+  -webkit-animation: fa-discolor 2s infinite linear;
+  animation: fa-discolor 2s infinite linear;
+}
 .fa-pulse {
   -webkit-animation: fa-spin 1s infinite steps(8);
   animation: fa-spin 1s infinite steps(8);
+}
+@-webkit-keyframes fa-discolor {
+  0% {
+    color: #ea4335;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    color: #fbbc05;
+  }
+  50% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    color: #4285f4;
+  }
+  75% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    color: #34a853;
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    color: #ea4335;
+  }
+}
+@keyframes fa-discolor {
+  0% {
+    color: #ea4335;
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  25% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(90deg);
+    color: #fbbc05;
+  }
+  50% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(180deg);
+    color: #4285f4;
+  }
+  75% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(270deg);
+    color: #34a853;
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+    color: #ea4335;
+  }
 }
 @-webkit-keyframes fa-spin {
   0% {
